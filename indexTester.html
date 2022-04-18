@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bruhcrypto Finance</title>
+</head>
+<style>
+
+body {
+
+  background: rgb(135,154,242);
+  background: linear-gradient(135deg, rgba(135,154,242,1) 0%, rgba(211,32,139,1) 50%, rgba(253,160,0,1) 100%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+font-family: Vectrex;
+src: url(vectrex-bold.ttf);
+}
+
+h1{
+    font-size: 50px;
+    font-family: Vectrex;
+    font-weight: 500; }
+
+
+pre{
+    font-family: Vectrex;
+}
+</style>
+<body>
+<center><h1>Decentralize the Future</h1></center>
+<center><pre>
+░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░
+░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
+░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░
+░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
+░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
+░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░
+░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░
+░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐░░
+░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░
+░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░
+▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░
+▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░
+░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░
+░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░
+░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
+░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
+░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
+░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
+
+With MemeFi
+</pre></center>
+
+<script>
+
+import detectEthereumProvider from '@metamask/detect-provider'
+
+const provider = await detectEthereumProvider()
+
+if (provider) {
+
+  console.log('Ethereum successfully detected!')
+
+  // From now on, this should always be true:
+  // provider === window.ethereum
+
+  // Access the decentralized web!
+
+  // Legacy providers may only have ethereum.sendAsync
+  const chainId = await provider.request({
+    method: 'eth_chainId'
+  })
+} else {
+
+  // if the provider is not detected, detectEthereumProvider resolves to null
+  console.error('Please install MetaMask!', error)
+}
+
+
+</script>
+
+</body>
+
+</html>
