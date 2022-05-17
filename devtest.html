@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Bruhcrypto Finance</title>
+
+<meta name="description" content="Just another Sushiswap, but with Memes"/>
+
+<link rel="icon" type="image/png" href="favicon1-circle.png" sizes="192x192" >
+
+<meta name="theme-color" content="#737dfe"/>
+
+</head>
+<link rel="apple-touch-icon" href="favicon1-circle.png" sizes="192x192">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+@font-face {
+font-family: Vectrex;
+src: url(vectrex-bold.ttf);
+}
+
+@font-face {
+font-family: Sk-Modernist;
+src: url(Sk-Modernist-Regular.otf);
+}
+
+</style>
+
+<style>
+
+body {
+
+  background: rgb(0,0,0);
+}
+
+h1{
+    font-size: 5vw;
+    font-family: Sk-Modernist;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #737dfe;
+  }
+
+pre{
+    font-size: 25px;
+    font-family: Sk-Modernist;
+    bottom: 22px;
+    color: white;
+    font-weight: 800;
+}
+
+p{
+  font-size: 15px;
+font-family: Sk-Modernist;
+  font-weight: 500;
+  color: white;
+  margin: 0px;
+}
+
+a{
+  font-size: 15px;
+  font-family: Sk-Modernist;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+h2{
+  font-size: 5vw;
+  font-family: Sk-Modernist;
+  font-weight: 700;
+  color: #F9C58D;
+  opacity: .5;
+}
+
+pre{
+  font-size: 25px;
+  font-family: Sk-Modernist;
+  color: white;
+  font-weight: 700;
+}
+
+#description1 {
+  font-size: 25px;
+  font-family: Sk-Modernist;
+  color: white;
+  font-weight: 700;
+}
+
+#description2{
+  font-size: 2.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 600;
+  color: white;
+  margin:0 auto
+}
+
+#description3{
+  font-size: 2.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 600;
+  color: white;
+  text-align: right;
+  margin:0 auto;
+}
+
+#description4{
+  font-size: 30px;
+  font-family: Sk-Modernist;
+  font-weight: 700;
+  color: white;
+  font-size: 2.3vw;
+}
+
+a:hover{
+  color: #737dfe;
+}
+
+#title2{
+  font-size: 3.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 700;
+  color: white;
+   margin:0 auto;
+}
+
+#title3{
+  font-size: 3.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+  margin:0 auto;
+}
+
+#collapsable{
+  font-size: 15px;
+  font-family: Sk-Modernist;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin:0 auto;
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+  position:absolute;
+top:0;
+left:0;
+z-index:1;
+}
+
+video{
+  max-width: 100%;
+  height: auto;
+}
+
+.logo1{
+position:absolute;
+top:0;
+left:-1;
+z-index:1;
+margin: -10px;
+}
+
+#launchApp{
+  font-family: Sk-Modernist;
+  font-size: 2vw;
+  background: hsla(31, 90%, 76%, 1);
+
+  background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
+  border-radius: 12px;
+  padding: 1.5vw;
+  border: white;
+  font-weight: 700;
+  color: white;
+}
+
+#launchApp:hover {
+  background: rgb(115,125,254);
+  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+
+}
+
+#numbers {
+  font-size: 2vw;
+}
+
+</style>
+<body>
+
+<a href="https://bruhcrypto.finance/">
+<img src="logo1.png" class="logo1"alt="logo" width="260" height= "146">
+</a>
+
+<section id="head1">
+  <div class="container">
+<video autoplay muted loop id="dronetest">
+  <source src="video1.mp4" type="video/mp4">
+</video>
+<div class="overlay">
+<pre>
+
+
+
+</pre>
+<h1>Bruhcrypto Finance</h1>
+<h2>Revolutionizing the future of 💵 + 💖</h2>
+<center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</div>
+</section>
+<center><pre id=description4>
+  We're not a run-of-the-mill MemeFi project. We're creating a better
+    future with web3, NFTs, erc-20, and DeFi.
+</pre></center>
+
+<pre>
+
+</pre>
+
+<center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"   width="800"
+  height= "555.2"></center>
+  <center><pre id="numbers">
+             Projected Valuation          DeFi Valuation Growth
+     of DeFi by 2023                          From 2020</pre></center>
+  <center><pre id="numbers">$800 Billion                                   6x</pre></center>
+
+<pre>
+
+
+</pre>
+<h1 id="title2">Our Mission</h1>
+<pre id="description2">
+Bruhcrypto Finance is a Decentralized Exchange and NFT
+marketplace focused on expanding MemeFi and helping people
+in poverty.</pre>
+
+<pre>
+
+
+
+</pre>
+
+<!-- <h1>Developmental Progress</h1>
+<pre id="description2">
+  At the moment, we finished deploying the backend code to a test
+  blockchain and are curently developing the landing page of the DEX.
+  We also laid plans for the NFT marketplace that will operate on
+  either Solana or Ethereum with added code from Blockworks to limit
+  the amount of miner fees involved in creating an NFT.</pre>
+
+  <pre>
+
+
+
+  </pre> -->
+
+<h1 id="title3">Decentralized Exchange</h1>
+<pre id="description3">
+Our DEX is a forked version of Uniswap, a market leader in
+Decentralized Finance. Combining their aspects with ours,
+the exchange is both user friendly and safe to use.
+</pre>
+
+<pre>
+
+
+
+</pre>
+
+<h1 id="title2">NFT Marketplace</h1>
+<pre id="description2">
+Our NFT marketplace focuses on helping children in poverty
+by letting them curate NFTs with low miner fees and sell
+them for proceeds that they can spend on everyday goods.
+<pre>
+
+
+
+
+
+
+</pre>
+
+<center><h1 id="title2">FAQ</center></h1>
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">Yes, we are safe. Our smart contracts for the Decentralized
+Exchange use a timelock and are forked from Uniswap V2.
+(More info about the NFT Marketplace coming soon)</pre>
+
+</center></div>
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">What are The Use Cases of Bruhcrypto Finance?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">We do have a few competitive advantages such
+as an NFT marketpace with fee-reducing code, and future
+updates that will introduce features such as staking.<pre>
+</center></div>
+
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">How will the Children Get Access to Bruhcrypto Finance?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">If the children do not have access to a device,
+then we are proposing giving them a device and teaching
+them how to use it and how to use Bruhcrypto Finance.<pre>
+</center></div>
+
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">What Sets Bruhcrypto Finance Apart From Competitors?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">If you take a look at some examples of DEXs such
+as ShibaSwap, KishuSwap, and Dojoswap, they all lack a few
+things such as an NFT marketplace and a charitable mission.
+Well, we will have both of them.<pre>
+</center></div>
+
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">How Big should Bruhcrypto Finance Be to become a major DEX?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">For Bruhcrypto Finance to be considered a market
+leader, we need about 17,820 active users per week beased on
+data from Dune Analytics.<pre>
+</center></div>
+
+<style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background: hsla(31, 90%, 76%, 1);
+
+  background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+border-radius: 15px;
+font-family: Sk-Modernist;
+color: white;
+width: 500px;
+font-weight: 700;
+margin: -20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background: rgb(115,125,254);
+  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+padding: 0 18px;
+background: hsla(31, 90%, 76%, 1);
+
+background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+border-radius: 15px;
+color: white;
+width: 465px;
+height: 130px;
+margin: -1px;
+}
+
+.collapsible:after {
+content: '\02795';
+font-size: 13px;
+color: white;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2796";
+}
+</style>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.maxHeight){
+  content.style.maxHeight = null;
+} else {
+  content.style.maxHeight = content.scrollHeight + "px";
+}
+});
+}
+</script>
+</div>
+
+<center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a></center>
+<center><p>Made with ♥ in Silicon Valley</p></center>
+<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter and Telegram</p></center>
+<center><p>v1.0.74 Theme: Twilight</p></center>
+</body>
+
+</html>
