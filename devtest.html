@@ -3,7 +3,7 @@
 
 <head>
 
-<title>Bruhcrypto Finance</title>
+<title>Bruhcrypto Finance Dev Test</title>
 
 <meta name="description" content="Just another Sushiswap, but with Memes"/>
 
@@ -32,7 +32,17 @@ src: url(vectrex-bold.ttf);
 
 @font-face {
 font-family: Sk-Modernist;
-src: url(Sk-Modernist-Regular.otf);
+src: url(SFUIDisplay-Regular.otf);
+}
+
+@font-face {
+font-family: SFBold;
+src: url(SFUIText-Medium.otf);
+}
+
+@font-face {
+font-family: SFMed;
+src: url(SFUIText-Rgular.otf);
 }
 
 </style>
@@ -46,10 +56,11 @@ body {
 
 h1{
     font-size: 5vw;
-    font-family: Sk-Modernist;
+    font-family: SFBold;
     font-weight: 700;
     line-height: 1.5em;
     color: #737dfe;
+
   }
 
 pre{
@@ -65,7 +76,7 @@ p{
 font-family: Sk-Modernist;
   font-weight: 500;
   color: white;
-  margin: 0px;
+  margin: -20px;
 }
 
 a{
@@ -78,10 +89,11 @@ a{
 
 h2{
   font-size: 5vw;
-  font-family: Sk-Modernist;
+  font-family: SFBold;
   font-weight: 700;
   color: #F9C58D;
   opacity: .5;
+
 }
 
 pre{
@@ -129,7 +141,7 @@ a:hover{
 
 #title2{
   font-size: 3.5vw;
-  font-family: Sk-Modernist;
+  font-family: SFBold;
   font-weight: 700;
   color: white;
    margin:0 auto;
@@ -137,7 +149,7 @@ a:hover{
 
 #title3{
   font-size: 3.5vw;
-  font-family: Sk-Modernist;
+  font-family: SFBold;
   font-weight: 700;
   color: white;
   text-align: right;
@@ -163,11 +175,6 @@ a:hover{
 top:0;
 left:0;
 z-index:1;
-}
-
-video{
-  max-width: 100%;
-  height: auto;
 }
 
 .logo1{
@@ -200,37 +207,39 @@ margin: -10px;
 #launchApp:hover {
   background: rgb(115,125,254);
   background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
-  transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-
 }
 
 #numbers {
   font-size: 2vw;
 }
 
+#head1{
+  background-image: url("Temp-3840x2140.jpg");
+}
+
+#topimage{
+  max-width: 100%;
+   max-height: 100%;
+}
+
+#logo1{
+
+}
+
 </style>
 <body>
+<script type="text/javascript">
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+</script>
 
-<a href="https://bruhcrypto.finance/">
-<img src="logo1.png" class="logo1"alt="logo" width="260" height= "146">
+<a id="logo1"href="https://bruhcrypto.finance/">
+<img src="logo1.png" alt="logo" width="260" height= "146">
 </a>
-
-<section id="head1">
-  <div class="container">
-<video autoplay muted loop id="dronetest">
-  <source src="video1.mp4" type="video/mp4">
-</video>
-<div class="overlay">
-<pre>
-
-
-
-</pre>
-<h1>Bruhcrypto Finance</h1>
-<h2>Revolutionizing the future of 💵 + 💖</h2>
+<h1>Dev Test</h1>
+<h2>Testing the Revolution of 💵 + 💖</h2>
 <center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
-
 <pre>
 
 
@@ -245,12 +254,8 @@ margin: -10px;
 
 
 </pre>
-</div>
-</div>
-</section>
 <center><pre id=description4>
-  We're not a run-of-the-mill MemeFi project. We're creating a better
-    future with web3, NFTs, erc-20, and DeFi.
+  WARNING: THE CONTENTS OF THIS PAGE MAY BE INACCURATE
 </pre></center>
 
 <pre>
@@ -270,9 +275,9 @@ margin: -10px;
 </pre>
 <h1 id="title2">Our Mission</h1>
 <pre id="description2">
-Bruhcrypto Finance is a Decentralized Exchange and NFT
-marketplace focused on expanding MemeFi and helping people
-in poverty.</pre>
+Bruhcrypto Finance is a decentralized cryptocurrency exchange
+and NFT marketplace where users can trade both NFTs and
+cryptocurrencies while helping people in poverty.</pre>
 
 <pre>
 
@@ -280,25 +285,11 @@ in poverty.</pre>
 
 </pre>
 
-<!-- <h1>Developmental Progress</h1>
-<pre id="description2">
-  At the moment, we finished deploying the backend code to a test
-  blockchain and are curently developing the landing page of the DEX.
-  We also laid plans for the NFT marketplace that will operate on
-  either Solana or Ethereum with added code from Blockworks to limit
-  the amount of miner fees involved in creating an NFT.</pre>
-
-  <pre>
-
-
-
-  </pre> -->
-
 <h1 id="title3">Decentralized Exchange</h1>
 <pre id="description3">
-Our DEX is a forked version of Uniswap, a market leader in
-Decentralized Finance. Combining their aspects with ours,
-the exchange is both user friendly and safe to use.
+Our DEX is a copied version of Uniswap, a primary decentralized
+crypto exchange. Combining their aspects with ours makes
+the exchange both user friendly and fast.
 </pre>
 
 <pre>
@@ -310,8 +301,8 @@ the exchange is both user friendly and safe to use.
 <h1 id="title2">NFT Marketplace</h1>
 <pre id="description2">
 Our NFT marketplace focuses on helping children in poverty
-by letting them curate NFTs with low miner fees and sell
-them for proceeds that they can spend on everyday goods.
+by letting them curate NFTs with low fees and sell them
+for money that they can spend on everyday goods.
 <pre>
 
 
@@ -325,17 +316,19 @@ them for proceeds that they can spend on everyday goods.
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">Yes, we are safe. Our smart contracts for the Decentralized
-Exchange use a timelock and are forked from Uniswap V2.
+<pre id="collapsable">Yes, we are safe. All of our actions to the
+exchange's code are delayed and require 2 days for an
+update to come through.
 (More info about the NFT Marketplace coming soon)</pre>
 
 </center></div>
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">What are The Use Cases of Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">We do have a few competitive advantages such
-as an NFT marketpace with fee-reducing code, and future
-updates that will introduce features such as staking.<pre>
+<pre id="collapsable">We do have a few advantages such as an NFT
+marketpace with fee-reducing code, and future updates
+that will introduce new features.
+(Passive income, anti-bot, etc.)<pre>
 </center></div>
 
 <center><div>
@@ -343,23 +336,23 @@ updates that will introduce features such as staking.<pre>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If the children do not have access to a device,
 then we are proposing giving them a device and teaching
-them how to use it and how to use Bruhcrypto Finance.<pre>
+them how to use it and Bruhcrypto Finance.<pre>
 </center></div>
 
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">What Sets Bruhcrypto Finance Apart From Competitors?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">If you take a look at some examples of DEXs such
-as ShibaSwap, KishuSwap, and Dojoswap, they all lack a few
-things such as an NFT marketplace and a charitable mission.
-Well, we will have both of them.<pre>
+<pre id="collapsable">If you take a look at some examples of decentralized
+exchanges such as ShibaSwap, KishuSwap, and Dojoswap,
+they all lack a few aspects such as an NFT marketplace
+and a charitable mission. Well, we will have both of them.<pre>
 </center></div>
 
 <center><div>
-<button type="button" class="collapsible" style="text-align: center;">How Big should Bruhcrypto Finance Be to become a major DEX?</button>
+<button type="button" class="collapsible" style="text-align: center;">How big should Bruhcrypto Finance be?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">For Bruhcrypto Finance to be considered a market
-leader, we need about 17,820 active users per week beased on
+leader, we need about 17,820 active users per week based on
 data from Dune Analytics.<pre>
 </center></div>
 
@@ -384,11 +377,11 @@ text-align: left;
 outline: none;
 font-size: 15px;
 border-radius: 15px;
-font-family: Sk-Modernist;
+font-family: SFBold;
 color: white;
 width: 500px;
 font-weight: 700;
-margin: -20px;
+margin: -40px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -452,8 +445,9 @@ if (content.style.maxHeight){
 
 <center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a></center>
 <center><p>Made with ♥ in Silicon Valley</p></center>
-<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter and Telegram</p></center>
-<center><p>v1.0.74 Theme: Twilight</p></center>
+<center><p>THIS PAGE IS USED FOR DEVELOPMENT PURPOSES ONLY<p></center>
+<center><a href="https://bruhcrypto.finance">Home</a>
+<center><p>β1.0.02</p></center>
 </body>
 
 </html>
