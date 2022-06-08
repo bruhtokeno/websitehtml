@@ -25,6 +25,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 @font-face {
 font-family: Vectrex;
 src: url(vectrex-bold.ttf);
@@ -32,17 +36,7 @@ src: url(vectrex-bold.ttf);
 
 @font-face {
 font-family: Sk-Modernist;
-src: url(SFUIDisplay-Regular.otf);
-}
-
-@font-face {
-font-family: SFBold;
-src: url(SFUIText-Medium.otf);
-}
-
-@font-face {
-font-family: SFMed;
-src: url(SFUIText-Rgular.otf);
+src: url(Sk-Modernist-Regular.otf);
 }
 
 </style>
@@ -51,21 +45,25 @@ src: url(SFUIText-Rgular.otf);
 
 body {
 
-  background: rgb(0,0,0);
+  background: rgb(115,125,254);
+  background: linear-gradient(239deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 29%, rgba(249,197,141,1) 65%, rgba(244,146,240,1) 100%);
+}
+
+div{
+  margin: 0;
 }
 
 h1{
     font-size: 5vw;
-    font-family: SFBold;
+    font-family: 'Lexend', sans-serif;
     font-weight: 700;
     line-height: 1.5em;
     color: #737dfe;
-
   }
 
 pre{
     font-size: 25px;
-    font-family: Sk-Modernist;
+    font-family: 'Lexend', sans-serif;
     bottom: 22px;
     color: white;
     font-weight: 800;
@@ -73,64 +71,76 @@ pre{
 
 p{
   font-size: 15px;
-font-family: Sk-Modernist;
-  font-weight: 500;
+font-family: 'Lexend', sans-serif;
+  font-weight: 400;
   color: white;
-  margin: -20px;
+  margin: -18px;
 }
 
 a{
   font-size: 15px;
-  font-family: Sk-Modernist;
+  font-family: 'Lexend', sans-serif;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
 }
 
 h2{
-  font-size: 5vw;
-  font-family: SFBold;
-  font-weight: 700;
-  color: #F9C58D;
-  opacity: .5;
-
+  font-size: 7vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: -8px;
 }
 
 pre{
   font-size: 25px;
-  font-family: Sk-Modernist;
+  font-family: 'Lexend', sans-serif;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #description1 {
   font-size: 25px;
-  font-family: Sk-Modernist;
+  font-family: 'Lexend', sans-serif;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #description2{
-  font-size: 2.5vw;
-  font-family: Sk-Modernist;
-  font-weight: 600;
+  font-size: 2vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
   color: white;
   margin:0 auto
 }
+#description2{
+    padding-left: 150px;
+}
 
 #description3{
-  font-size: 2.5vw;
-  font-family: Sk-Modernist;
-  font-weight: 600;
+  font-size: 2vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
   color: white;
-  text-align: right;
   margin:0 auto;
+  padding-left: 150px;
 }
+
+#description31{
+  font-size: 2vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin:0 auto;
+  padding-left: 0px;
+}
+
 
 #description4{
   font-size: 30px;
-  font-family: Sk-Modernist;
-  font-weight: 700;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
   color: white;
   font-size: 2.3vw;
 }
@@ -140,26 +150,43 @@ a:hover{
 }
 
 #title2{
-  font-size: 3.5vw;
-  font-family: SFBold;
-  font-weight: 700;
+  font-size: 3vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  color: white;
+   margin:0 auto;
+   padding-left: 150px;
+}
+
+#title3{
+  font-size: 3vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin:0 auto;
+padding-left: 150px;
+}
+
+#title4{
+  font-size: 3vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
   color: white;
    margin:0 auto;
 }
 
-#title3{
-  font-size: 3.5vw;
-  font-family: SFBold;
-  font-weight: 700;
+#title31{
+  font-size: 3vw;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
   color: white;
-  text-align: right;
-  margin:0 auto;
+   margin:0 auto;
 }
 
 #collapsable{
   font-size: 15px;
-  font-family: Sk-Modernist;
-  font-weight: 700;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
   color: white;
   text-align: center;
   margin:0 auto;
@@ -186,7 +213,7 @@ margin: -10px;
 }
 
 #launchApp{
-  font-family: Sk-Modernist;
+  font-family: 'Lexend', sans-serif;
   font-size: 2vw;
   background: hsla(31, 90%, 76%, 1);
 
@@ -200,30 +227,32 @@ margin: -10px;
   border-radius: 12px;
   padding: 1.5vw;
   border: white;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
 }
 
 #launchApp:hover {
   background: rgb(115,125,254);
   background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+
+}
+
+#Top1{
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
 }
 
 #numbers {
   font-size: 2vw;
+  margin: -10px;
 }
 
-#head1{
-  background-image: url("Temp-3840x2140.jpg");
-}
-
-#topimage{
-  max-width: 100%;
-   max-height: 100%;
-}
-
-#logo1{
-
+#buttonstop{
+  display:inline; white-space:nowrap
 }
 
 </style>
@@ -233,12 +262,24 @@ if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 </script>
+<a href="https://bruhcrypto.finance"id="Top1">Bc/F.</a>
+<pre>
 
-<a id="logo1"href="https://bruhcrypto.finance/">
-<img src="logo1.png" alt="logo" width="260" height= "146">
-</a>
-<h1>Bruhcrypto Finance</h1>
-<h2>Revolutionizing the future of 💵 + 💖</h2>
+
+
+</pre>
+<h2>Revolutionizing the</h2>
+<h2>future of 💵 + 💖</h2>
+<pre>
+Trade tokens and NFTs, help children in poverty,
+and provide liquidity to recieve liquidity pool
+tokens with Bruhcrypto Finance
+<pre>
+
+
+
+</pre>
+<div id="buttonstop">
 <center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
 <pre>
 
@@ -246,6 +287,21 @@ document.location = "mobile.html";
 
 
 
+
+</pre>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '60072');
+</script>
+<!-- End MailerLite Universal -->
+<div class="ml-embedded" data-form="xE3kSv"></div>
+
+</div>
+<pre>
 
 
 
@@ -255,8 +311,8 @@ document.location = "mobile.html";
 
 </pre>
 <center><pre id=description4>
-  We're not a run-of-the-mill MemeFi project. We're creating a better
-    future with web3, NFTs, erc-20, and DeFi.
+  We're not a run-of-the-mill MemeFi project. We're helping impoverished
+    children with web3, NFTs, commissions, and DeFi.
 </pre></center>
 
 <pre>
@@ -278,33 +334,40 @@ document.location = "mobile.html";
 <pre id="description2">
 Bruhcrypto Finance is a decentralized cryptocurrency exchange
 and NFT marketplace where users can trade both NFTs and
-cryptocurrencies while helping people in poverty.
-</pre>
+cryptocurrencies while helping people in poverty.</pre>
 
 <pre>
-
-
 
 </pre>
 
 <h1 id="title3">Decentralized Exchange</h1>
 <pre id="description3">
 Our DEX is a copied version of Uniswap, a primary decentralized
-crypto exchange. Combining their aspects with ours makes
-the exchange both user friendly and fast.
+crypto exchange. Combining their aspects with ours makes the
+exchange both user friendly and fast.
 </pre>
 
 <pre>
-
-
 
 </pre>
 
 <h1 id="title2">NFT Marketplace</h1>
 <pre id="description2">
 Our NFT marketplace focuses on helping children in poverty
-by letting them curate NFTs with low fees and sell them
-for money that they can spend on everyday goods.
+by letting them curate NFTs at their own pace with low fees
+and sell them for money that they can spend on everyday goods.
+
+<pre>
+
+</pre>
+<h1 id="title31">Why We Should Help</h1>
+<pre id="description31">
+Now, more than ever, education and a stable life are needed
+for children who want to pioneer the future. Some children
+are not able to access the resources that they need to achieve
+their dreams. That's where we step in and help the children with
+NFTs.
+</pre>
 <pre>
 
 
@@ -314,48 +377,59 @@ for money that they can spend on everyday goods.
 
 </pre>
 
-<center><h1 id="title2">FAQ</center></h1>
+<center><h1 id="title4">FAQ</center></h1>
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Yes, we are safe. All of our actions to the
 exchange's code are delayed and require 2 days for an
 update to come through.
-(More info about the NFT Marketplace coming soon)</pre>
-
+(More info about the NFT Marketplace coming soon)
+</pre>
 </center></div>
 <center><div>
-<button type="button" class="collapsible" style="text-align: center;">What are The Use Cases of Bruhcrypto Finance?</button>
+<button type="button" class="collapsible" style="text-align: center;">How will The Children Benefit from Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">We do have a few advantages such as an NFT
-marketpace with fee-reducing code, and future updates
-that will introduce new features.
-(Passive income, anti-bot, etc.)<pre>
+<pre id="collapsable">When their NFT gets sold, the amount of
+cryptocurrency that the buyer bought the NFT for goes
+straight to the child's crypto wallet for them to freely
+hold or liquidate.<pre>
 </center></div>
-
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">How will the Children Get Access to Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If the children do not have access to a device,
 then we are proposing giving them a device and teaching
-them how to use it and Bruhcrypto Finance.<pre>
+them how to use it and Bruhcrypto Finance. If the parents
+or gaurdians notify us about the child improperly using
+the device, we will set screen time limits and stop when
+the parents tell us to do so.<pre>
 </center></div>
-
 <center><div>
 <button type="button" class="collapsible" style="text-align: center;">What Sets Bruhcrypto Finance Apart From Competitors?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If you take a look at some examples of decentralized
 exchanges such as ShibaSwap, KishuSwap, and Dojoswap,
 they all lack a few aspects such as an NFT marketplace
-and a charitable mission. Well, we will have both of them.<pre>
+and a charitable mission. Well, we will have both of
+them.<pre>
 </center></div>
-
 <center><div>
-<button type="button" class="collapsible" style="text-align: center;">How big should Bruhcrypto Finance be?</button>
+<button type="button" class="collapsible" style="text-align: center;">How will We Get People to Buy The NFTs?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">For Bruhcrypto Finance to be considered a market
-leader, we need about 17,820 active users per week based on
-data from Dune Analytics.<pre>
+<pre id="collapsable">For us to get people to buy the NFTs, we need to spread
+marketing to other platforms and (hopefully) publish press
+releases about our mission to get more and more people
+interested in using Bruhcrypto Finance's DEX and NFT
+Marketplace.<pre>
+</center></div>
+<center><div>
+<button type="button" class="collapsible" style="text-align: center;">How are We Going to Use Swap Commissions?</button>
+<div class="content" style="text-align: center;">
+<pre id="collapsable">Since we charge a commission on swaps, we
+plan on using 70% of it to generate revenue, 25% of it
+to donate to charitable organizations, and 5% of it to
+be used as emergency funds. <pre>
 </center></div>
 
 <style>
@@ -379,11 +453,10 @@ text-align: left;
 outline: none;
 font-size: 15px;
 border-radius: 15px;
-font-family: SFBold;
+font-family: 'Lexend', sans-serif;
 color: white;
 width: 500px;
-font-weight: 700;
-margin: -40px;
+font-weight: 400;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -410,8 +483,7 @@ transition: max-height 0.2s ease-out;
 border-radius: 15px;
 color: white;
 width: 465px;
-height: 130px;
-margin: -1px;
+height: 200px;
 }
 
 .collapsible:after {
@@ -445,11 +517,11 @@ if (content.style.maxHeight){
 </script>
 </div>
 
-<center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a></center>
+<center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center>
 <center><p>Made with ♥ in Silicon Valley</p></center>
-<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter and Telegram</p></center>
-<center>
+<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter</p></center>
 <center><p>v1.0.80</p></center>
+<center><p>Theme: Peach Sorbet</p></center>
 </body>
 
 </html>
