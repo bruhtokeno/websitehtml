@@ -244,6 +244,38 @@ document.location = "mobile.html";
 </pre>
 <h2>Bruhcrypto</h2>
 <h2>Finance</h2>
+ <style> 
+   
+   #model { 
+   height: 80vw; 
+   width: 80vw; 
+   position: absolute; 
+   top: calc(50% - 250px); 
+   right: 10vw; 
+   } 
+   
+   #model model-viewer { 
+     height: 80vw; 
+     width: 80vw; 
+     position: absolute; 
+     top: 0; 
+     left: 0; 
+     border: none; 
+     border-radius: 20px; 
+   } 
+  
+</style> 
+  
+  <script type="module" 
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
+  </script> 
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script> 
+  <div id="model"> <model-viewer 
+  src="Project Name.glb" 
+  auto-rotate camera-controls 
+  alt="A 3D model of our interface" 
+  camera-orbit="-20deg 75deg 2m"> </model-viewer> </div>
+  
 <pre>
 Trade tokens and NFTs, help children in poverty,
 and provide liquidity to recieve liquidity pool
