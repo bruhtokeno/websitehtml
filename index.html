@@ -43,7 +43,7 @@ src: url(Sk-Modernist-Regular.otf);
   
 @font-face {
 font-family: Satoshi;
-src: url(Satoshi-Medium.otf);
+src: url(Satoshi-Regular.otf);
 }
 
 
@@ -72,11 +72,12 @@ h1{
     margin-left: 2vw;
   }
 
-#headescription{
+pre{
     font-size: 25px;
-    font-family: Satoshi;
+    font-family: 'DM Sans', sans-serif;
     bottom: 22px;
     color: white;
+    font-weight: 800;
     margin-left: 2vw;
 }
 
@@ -85,6 +86,7 @@ p{
 font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   color: white;
+  margin: -10px;
 }
 
 a{
@@ -93,7 +95,6 @@ a{
   text-decoration: none;
   font-weight: 500;
   color: white;
-  margin-bottom: 10px;
 }
 
 h2{
@@ -104,6 +105,14 @@ h2{
   margin: -1vw;
   margin-left: 2vw
 }
+
+pre{
+  font-size: 2vw;
+  font-family: Satoshi;
+  color: white;
+  font-weight: 500;
+}
+
 #description1 {
   font-size: 25px;
   font-family: 'DM Sans', sans-serif;
@@ -214,9 +223,7 @@ margin: -10px;
 
 #numbers {
   font-size: 2vw;
-  margin: -6px;
-  font-family: Satoshi;
-  color: white;
+  margin: -10px;
 }
 
 #buttonstop{
@@ -271,16 +278,16 @@ document.location = "mobile.html";
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script> 
   <div id="model"> <model-viewer 
   src="Project Name.glb" 
-  auto-rotate
+  auto-rotate camera-controls 
   alt="A 3D model of our interface" 
   environment-image="image.png"
   camera-orbit="-20deg 75deg 2m"> </model-viewer> </div>
   
-<pre id="headescription">
+<pre>
 Trade tokens and NFTs, help children in poverty,
 and provide liquidity to recieve liquidity pool
 tokens with Bruhcrypto Finance
-</pre>
+<pre>
 
 
 
@@ -329,8 +336,8 @@ tokens with Bruhcrypto Finance
   height= "555.2"></center>
   <center><pre id="numbers">
              Projected Valuation          DeFi Valuation Growth
-         of DeFi by 2023                        From 2020</pre></center>
-  <center><pre id="numbers">  $800 Billion                                  6x</pre></center>
+     of DeFi by 2023                          From 2020</pre></center>
+  <center><pre id="numbers">$800 Billion                                   6x</pre></center>
 
 <pre>
 
@@ -468,7 +475,6 @@ font-family: 'DM Sans', sans-serif;
 color: white;
 width: 500px;
 font-weight: 400;
-margin-bottom: 25px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -533,7 +539,7 @@ if (content.style.maxHeight){
 <center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center>
 <center><p>Made with ♥ in Silicon Valley</p></center>
 <center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter</p></center>
-<center><p>v1.1.27</p></center>
+<center><p>Disclaimer: We are currently editing the website, so some experiences might be unstable.</p></center>
 <center><p>Theme: Peach Sorbet</p></center>
 </body>
 
