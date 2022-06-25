@@ -40,41 +40,36 @@ src: url(vectrex-bold.ttf);
 font-family: Sk-Modernist;
 src: url(Sk-Modernist-Regular.otf);
 }
-  
+
 @font-face {
 font-family: Satoshi;
 src: url(Satoshi-Medium.otf);
 }
-
 
 </style>
 
 <style>
 
 body {
-  background: rgb(115,125,254);
-  background: -moz-linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#737dfe",endColorstr="#f492f0",GradientType=1);
-}
+  background: hsla(236, 99%, 72%, 1);
+
+  background: linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#737DFE", endColorstr="#FFCAC9", GradientType=1 );
+  }
+
 
 div{
   margin: 0;
 }
 
-h1{
-    font-size: 5vw;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    line-height: 1.5em;
-    color: #737dfe;
-    margin-left: 2vw;
-  }
-
 pre{
     font-size: 25px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: Satoshi;
     bottom: 22px;
     color: white;
     font-weight: 800;
@@ -82,16 +77,16 @@ pre{
 }
 
 p{
-  font-size: 15px;
-font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: Satoshi;
   font-weight: 500;
   color: white;
   margin: -10px;
 }
 
 a{
-  font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: Satoshi;
   text-decoration: none;
   font-weight: 500;
   color: white;
@@ -99,7 +94,7 @@ a{
 
 h2{
   font-size: 7vw;
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
   font-weight: 700;
   color: white;
   margin: -1vw;
@@ -107,11 +102,21 @@ h2{
 }
 
 pre{
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-family: Satoshi;
   color: white;
   font-weight: 500;
 }
+
+#desc{
+  font-size: 25px;
+  font-family: Satoshi;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20vw;
+  overflow-wrap: break-all;
+}
+
 
 #description1 {
   font-size: 25px;
@@ -122,13 +127,14 @@ pre{
 
 #description2{
   font-size: 2vw;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   color: white;
   margin:0 auto
 }
 #description2{
-    padding-left: 150px;
+    padding-left: 4vw;
+    margin-bottom: 5vw;
 }
 
 #description4{
@@ -137,10 +143,15 @@ pre{
   font-weight: 500;
   color: white;
   font-size: 2.3vw;
+  margin-bottom: 8vw;
 }
 
-a:hover{
-  color: #737dfe;
+a:hover {
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+  color: black;
 }
 
 #title2{
@@ -148,7 +159,7 @@ a:hover{
   font-family: 'Syne', sans-serif;
   font-weight: 700;
   color: white;
-   padding-left: 150px;
+  padding-left: 4vw;
 }
 
 #title4{
@@ -159,8 +170,8 @@ a:hover{
 }
 
 #collapsable{
-  font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: "DM Sans", Sans-serif;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -204,6 +215,9 @@ margin: -10px;
   border: white;
   font-weight: 500;
   color: white;
+  margin-bottom: 15vw;
+  margin-top: 12px;
+
 }
 
 #launchApp:hover {
@@ -211,12 +225,16 @@ margin: -10px;
   background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
   transition-delay: 1s;
   -webkit-transition-delay: 1s;
-
 }
+
+#divider{
+  margin-bottom: 8vw;
+}
+
 
 #Top1{
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 500;
     color: white;
 }
@@ -224,6 +242,8 @@ margin: -10px;
 #numbers {
   font-size: 2vw;
   margin: -10px;
+  font-family: Satoshi;
+  margin-bottom: 10vw;
 }
 
 #buttonstop{
@@ -235,116 +255,101 @@ iframe{
   height: 60vw;
 }
 
+button{
+  font-family: Satoshi;
+}
+
+.ml-embedded{
+  margin-bottom: 15vw;
+}
+
+img{
+  width: 57vw;
+  height: 40vw;
+}
+
+#last{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin: -10px;
+  margin-bottom: -10vw
+}
+
+#first{
+  margin-top: -3vw;
+}
+
 </style>
+
 <body>
 <script type="text/javascript">
 if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 </script>
+
 <a href="https://bruhcrypto.finance"id="Top1">Bc/F.</a>
-<pre>
 
+<p id="divider"></p>
 
-
-</pre>
 <h2>Bruhcrypto</h2>
 <h2>Finance</h2>
- <style> 
-   
-   #model { 
-   height: 40vw; 
-   width: 40vw; 
-   position: absolute; 
-   top: calc(50% - 20vw); 
-   right: 3vw; 
-   } 
-   
-   #model model-viewer { 
-     height: 40vw; 
-     width: 40vw; 
-     position: absolute; 
-     top: 0; 
-     left: 0; 
-     border: none; 
-     border-radius: 2vw; 
-   } 
-  
-</style> 
-  
-  <script type="module" 
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
-  </script> 
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script> 
-  <div id="model"> <model-viewer 
-  src="Project Name.glb" 
-  auto-rotate 
-  alt="A 3D model of our interface" 
+
+<style>
+
+   #model {
+   height: 40vw;
+   width: 40vw;
+   position: absolute;
+   top: calc(25vw - 20vw);
+   right: 3vw;
+   }
+
+   #model model-viewer {
+     height: 40vw;
+     width: 40vw;
+     position: absolute;
+     top: 0;
+     left: 0;
+     border: none;
+     border-radius: 2vw;
+   }
+
+</style>
+
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script>
+  <div id="model"> <model-viewer
+  src="Project Name.glb"
+  auto-rotate
+  alt="A 3D model of our interface"
   environment-image="gradient].jpg"
   camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
-  
+
 <pre>
-Trade your favorite tokens and 
-NFTs while helping children in 
-poverty
+Trade tokens and NFTs, help children in poverty,
+and provide liquidity to recieve liquidity pool
+tokens with Bruhcrypto Finance
 <pre>
-
-
-
-</pre>
-<div id="buttonstop">
+<p id="divider"></p>
 <center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
-<pre>
 
-
-
-
-
-
-</pre>
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '60072');
-</script>
-<!-- End MailerLite Universal -->
-<div class="ml-embedded" data-form="xE3kSv"></div>
-
-</div>
-<pre>
-
-
-
-
-
-
-
-</pre>
 <center><pre id=description4>
   We're not a run-of-the-mill MemeFi project. We're creating a better
     future with web3, NFTs, commissions, and DeFi.
 </pre></center>
 
-<pre>
-
-</pre>
-
-<center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"   width="800"
-  height= "555.2"></center>
+<center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"></center>
   <center><pre id="numbers">
              Projected Valuation          DeFi Valuation Growth
-     of DeFi by 2023                          From 2020</pre></center>
-  <center><pre id="numbers">$800 Billion                                   6x</pre></center>
+        of DeFi by 2023                        From 2020
 
-<pre>
+      $800 Billion                                  6x</pre></center>
 
-
-
-
-</pre>
 <h1 id="title2">Why We Should Help</h1>
 <pre id="description2">
 Now, more than ever, education and a stable life are needed
@@ -354,29 +359,17 @@ their dreams. That's where we step in and help the children with
 NFTs.
 </pre>
 
-<pre>
-
-
-</pre>
 <h1 id="title2">Our Mission</h1>
 <pre id="description2">
 Bruhcrypto Finance is a decentralized cryptocurrency exchange
 and NFT marketplace where users can trade both NFTs and
 cryptocurrencies while helping people in poverty.</pre>
 
-<pre>
-
-</pre>
-
 <h1 id="title2">Decentralized Exchange</h1>
 <pre id="description2">
 Our DEX is a copied version of Uniswap, a primary decentralized
 crypto exchange. Combining their aspects with ours makes the
 exchange both user friendly and fast.
-</pre>
-
-<pre>
-
 </pre>
 
 <h1 id="title2">NFT Marketplace</h1>
@@ -386,17 +379,8 @@ by letting them curate NFTs at their own pace with low fees
 and sell them for money that they can spend on everyday goods.
 </pre>
 
-<pre>
-
-
-
-
-
-
-</pre>
-
 <center><h1 id="title4">FAQ</center></h1>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Yes, we are safe. All of our actions to the
@@ -405,49 +389,49 @@ update to come through.
 (More info about the NFT Marketplace coming soon)
 </pre>
 </center></div>
-<center><div>
-<button type="button" class="collapsible" style="text-align: center;">How will The Children Benefit from Bruhcrypto Finance?</button>
+<center>
+<button type="button" class="collapsible" style="text-align: center;">How will Children Benefit from Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">When their NFT gets sold, the amount of
 cryptocurrency that the buyer bought the NFT for goes
 to the child's crypto wallet for them to freely hold
-or liquidate.<pre>
+or liquidate.</pre>
 </center></div>
-<center><div>
-<button type="button" class="collapsible" style="text-align: center;">How will the Children Get Access to Bruhcrypto Finance?</button>
+<center>
+<button type="button" class="collapsible" style="text-align: center;">How will Children Get Access to Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If the children do not have access to a device,
 then we are proposing giving them a device and teaching
 them how to use it and Bruhcrypto Finance. If the parents
 or gaurdians notify us about the child improperly using
 the device, we will set screen time limits and stop when
-the parents tell us to do so.<pre>
+the parents tell us to do so.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">What Sets Bruhcrypto Finance Apart From Competitors?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If you take a look at some examples of decentralized
 exchanges such as ShibaSwap, KishuSwap, and Dojoswap,
 they all lack a few aspects such as an NFT marketplace
 and a charitable mission. Well, we will have both of
-them.<pre>
+them.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">How will We Get People to Buy The NFTs?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">For us to get people to buy the NFTs, we need to spread
 marketing to other platforms and (hopefully) publish press
 releases about our mission to get more and more people
 interested in using Bruhcrypto Finance's DEX and NFT
-Marketplace.<pre>
+Marketplace.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">How are We Going to Use Swap Commissions?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Since we charge a commission on swaps, we
 plan on using 70% of it to generate revenue, 25% of it
 to donate to charitable organizations, and 5% of it to
-be used as emergency funds. <pre>
+be used as emergency funds. </pre>
 </center></div>
 
 <style>
@@ -464,16 +448,16 @@ be used as emergency funds. <pre>
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
 color: #444;
 cursor: pointer;
-padding: 18px;
+padding: 1.2vw;
 width: 100%;
 border: none;
 text-align: left;
 outline: none;
-font-size: 15px;
-border-radius: 15px;
-font-family: 'DM Sans', sans-serif;
+font-size: 1vw;
+border-radius: 0.9vw;
+font-family: "DM Sans", sans-serif;
 color: white;
-width: 500px;
+width: 35vw;
 font-weight: 400;
 }
 
@@ -498,16 +482,17 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", en
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
-border-radius: 15px;
+border-radius: 1vw;
 color: white;
-width: 465px;
-height: 200px;
+width: 32vw;
+height: 20vw;
 font-weight: 500;
+font-family: Satoshi;
 }
 
 .collapsible:after {
 content: '\02795';
-font-size: 13px;
+font-size: 0.85vw;
 color: white;
 float: right;
 margin-left: 5px;
@@ -534,13 +519,11 @@ if (content.style.maxHeight){
 });
 }
 </script>
-</div>
-
-<center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center>
+<div id="first"><center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center></div>
 <center><p>Made with ♥ in Silicon Valley</p></center>
-<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter</p></center>
-<center><p>Disclaimer: We are currently editing the website, so some experiences might be unstable.</p></center>
-<center><p>Theme: Peach Sorbet</p></center>
+<center><p>Contact us at bruhofficial@bruhcrypto.finance or @bruhcryptofi on Twitter</p></center>
+<center><p>v1.1.71</p></center>
+<center><p id="last">Theme: Lavender Field</p></center>
 </body>
 
 </html>
