@@ -23,13 +23,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 @font-face {
 font-family: Vectrex;
@@ -41,34 +43,27 @@ font-family: Sk-Modernist;
 src: url(Sk-Modernist-Regular.otf);
 }
 
+@font-face {
+font-family: Satoshi;
+src: url(Satoshi-Medium.otf);
+}
+
 </style>
 
 <style>
 
 body {
-  background: rgb(115,125,254);
-  background: -moz-linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 27%, rgba(249,203,175,1) 52%, rgba(245,203,156,1) 64%, rgba(244,146,240,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#737dfe",endColorstr="#f492f0",GradientType=1);
-}
+  background: #737dfe;
+  }
+
 
 div{
   margin: 0;
 }
 
-h1{
-    font-size: 5vw;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    line-height: 1.5em;
-    color: #737dfe;
-    margin-left: 2vw;
-  }
-
 pre{
     font-size: 25px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: Satoshi;
     bottom: 22px;
     color: white;
     font-weight: 800;
@@ -76,36 +71,60 @@ pre{
 }
 
 p{
-  font-size: 15px;
-font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: Satoshi;
   font-weight: 500;
   color: white;
-  margin: -10px;
+  margin: -.7vw;
 }
 
 a{
-  font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: Satoshi;
   text-decoration: none;
   font-weight: 500;
   color: white;
 }
 
 h2{
-  font-size: 7vw;
-  font-family: 'Syne', sans-serif;
+  font-size: 5.5vw;
+  font-family: Sk-Modernist;
   font-weight: 700;
   color: white;
   margin: -1vw;
   margin-left: 2vw
 }
 
+h2{
+  font-weight: 500;
+}
+
 pre{
-  font-size: 2vw;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 1.8vw;
+  font-family: Satoshi;
   color: white;
   font-weight: 500;
 }
+
+#comingsoon{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin: -.7vw;
+  margin-bottom: 15vw;
+  margin-top: 1vw;
+}
+
+#desc{
+  font-size: 25px;
+  font-family: Satoshi;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20vw;
+  overflow-wrap: break-all;
+}
+
 
 #description1 {
   font-size: 25px;
@@ -116,45 +135,80 @@ pre{
 
 #description2{
   font-size: 2vw;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   color: white;
   margin:0 auto
 }
 #description2{
-    padding-left: 150px;
+    margin-bottom: 20vw;
+    margin-left: 5vw;
 }
 
 #description4{
   font-size: 30px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Satoshi;
   font-weight: 500;
   color: white;
   font-size: 2.3vw;
+  margin-bottom: 8vw;
+  margin-left: 4vw;
 }
 
-a:hover{
-  color: #737dfe;
-}
-
-#title2{
-  font-size: 3vw;
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
+#version{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
   color: white;
-   padding-left: 150px;
+  margin-bottom: -10vw;
 }
+
+a:hover {
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+  color: black;
+}
+
+u{
+  font-size: 1.3vw;
+  font-family: Sk-Modernist;
+  font-weight: 400;
+  color: white;
+  margin-top: 6vw;
+}
+
+u{
+  margin-left: 5vw;
+  text-decoration: none;
+  border-bottom: .2vw solid white;
+}
+
+#title20{
+  font-size: 4.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 400;
+  color: white;
+  margin-top: 10vw;
+}
+
+#title20{
+  margin-left: 5vw;
+}
+
 
 #title4{
-  font-size: 3vw;
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
+  font-size: 4vw;
+  font-family: Sk-Modernist;
+  font-weight: 500;
   color: white;
+  margin-left: -2vw;
 }
 
 #collapsable{
-  font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-size: 1vw;
+  font-family: "DM Sans", Sans-serif;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -181,36 +235,41 @@ z-index:1;
 margin: -10px;
 }
 
+span{
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5vw;
+  color: white;
+}
+
 #launchApp{
-  font-family: 'DM Sans', sans-serif;
-  font-size: 2vw;
-  background: hsla(31, 90%, 76%, 1);
-
-  background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  background: -moz-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  background: -webkit-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
-  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5vw;
+  background: black;
+  border-radius: 1.3vw;
   padding: 1.5vw;
   border: white;
   font-weight: 500;
   color: white;
+  margin-top: 12px;
+  margin-left: -1vw;
 }
 
 #launchApp:hover {
-  background: rgb(115,125,254);
-  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
-  transition-delay: 1s;
-  -webkit-transition-delay: 1s;
+  background: white;
+  color: black;
+}
 
+#divider{
+  margin-bottom: 8vw;
+}
+  
+#divider2{
+  margin-bottom: 11vw;
 }
 
 #Top1{
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 500;
     color: white;
 }
@@ -218,6 +277,8 @@ margin: -10px;
 #numbers {
   font-size: 2vw;
   margin: -10px;
+  font-family: "Satoshi";
+  margin-bottom: 10vw;
 }
 
 #buttonstop{
@@ -229,117 +290,199 @@ iframe{
   height: 60vw;
 }
 
+button{
+  font-family: Satoshi;
+}
+
+.ml-embedded{
+  margin-bottom: 15vw;
+}
+
+img{
+  width: 57vw;
+  height: 40vw;
+}
+
+#last{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin: -10px;
+  margin-bottom: -10vw
+}
+
+#first{
+  margin-top: -3vw;
+}
+
+#s1{
+  background: hsla(39, 91%, 78%, 1);
+
+  background: linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAD693", endColorstr="#EFA1A8", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s2{
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FAD88E", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s3{
+  background: hsla(22, 100%, 92%, 1);
+
+  background: linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE4D4", endColorstr="#FFECD7", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s4{
+  background: hsla(0, 51%, 76%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E1A2A2", endColorstr="#2F98D0", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s5{
+  background: hsla(57, 91%, 66%, 1);
+
+  background: linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7EF5C", endColorstr="#229FF2", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s6{
+  background: hsla(277, 40%, 56%, 1);
+
+  background: linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9A62BC", endColorstr="#48AAEB", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+  position: inherit;
+  margin-bottom: -10vw;
+}
+
 </style>
+
 <body>
+<section>
 <script type="text/javascript">
 if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 </script>
+
+
 <a href="https://bruhcrypto.finance"id="Top1">Bc/F.</a>
+
+<p id="divider"></p>
+
+<h2>Creating a better</h2>
+<h2>future with</h2>
+<h2>web3 & DeFi.</h2>
+
+<style>
+
+   #model {
+   height: 40vw;
+   width: 40vw;
+   position: absolute;
+   top: calc(25vw - 20vw);
+   right: 3vw;
+   }
+
+   #model model-viewer {
+     height: 40vw;
+     width: 40vw;
+     position: absolute;
+     top: 0;
+     left: 0;
+     border: none;
+     border-radius: 2vw;
+   }
+
+</style>
+
+  <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script>
+  <div id="model"> <model-viewer
+  src="Project Name.glb"
+  auto-rotate
+  alt="A 3D model of our interface"
+  environment-image="gradient].jpg"
+  camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
+
 <pre>
-
-
-
-</pre>
-<h2>Bruhcrypto</h2>
-<h2>Finance</h2>
- <style> 
-   
-   #model { 
-   height: 40vw; 
-   width: 40vw; 
-   position: absolute; 
-   top: calc(50% - 20vw); 
-   right: 3vw; 
-   } 
-   
-   #model model-viewer { 
-     height: 40vw; 
-     width: 40vw; 
-     position: absolute; 
-     top: 0; 
-     left: 0; 
-     border: none; 
-     border-radius: 2vw; 
-   } 
-  
-</style> 
-  
-  <script type="module" 
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
-  </script> 
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script> 
-  <div id="model"> <model-viewer 
-  src="Project Name.glb" 
-  auto-rotate camera-controls 
-  alt="A 3D model of our interface" 
-  environment-image="image.png"
-  camera-orbit="-20deg 75deg 2m"> </model-viewer> </div>
-  
+Trade your favorite tokens and NFTs
+while helping children in poverty
 <pre>
-Trade tokens and NFTs, help children in poverty,
-and provide liquidity to recieve liquidity pool
-tokens with Bruhcrypto Finance
-<pre>
-
-
-
-</pre>
-<div id="buttonstop">
-<center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
-<pre>
-
-
-
-
-
-
-</pre>
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '60072');
-</script>
-<!-- End MailerLite Universal -->
-<div class="ml-embedded" data-form="xE3kSv"></div>
-
-</div>
-<pre>
-
-
-
-
-
-
-
-</pre>
+<button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App 🡪 🚧</button>
+<p id="divider2"></p>
+<p id="divider"></p>
+<section id="s1">
 <center><pre id=description4>
   We're not a run-of-the-mill MemeFi project. We're creating a better
     future with web3, NFTs, commissions, and DeFi.
 </pre></center>
 
-<pre>
-
-</pre>
-
-<center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"   width="800"
-  height= "555.2"></center>
+<center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"></center>
   <center><pre id="numbers">
              Projected Valuation          DeFi Valuation Growth
-     of DeFi by 2023                          From 2020</pre></center>
-  <center><pre id="numbers">$800 Billion                                   6x</pre></center>
+        of DeFi by 2023                        From 2020
 
-<pre>
-
-
-
-
-</pre>
-<h1 id="title2">Why We Should Help</h1>
+      $800 Billion                                  6x</pre></center>
+</section><section id="s3">
+<u>Mission</u>
+<h1 id="title20">Our Mission</h1>
+<pre id="description2">
+Bruhcrypto Finance is a decentralized cryptocurrency exchange
+and NFT marketplace where users can trade both NFTs and
+cryptocurrencies while helping people in poverty.</pre>
+</section><section id="s2">
+<u>Mission</u>
+<h1 id="title20">Why We Should Help</h1>
 <pre id="description2">
 Now, more than ever, education and a stable life are needed
 for children who want to pioneer the future. Some children
@@ -347,50 +490,25 @@ are not able to access the resources that they need to achieve
 their dreams. That's where we step in and help the children with
 NFTs.
 </pre>
-
-<pre>
-
-
-</pre>
-<h1 id="title2">Our Mission</h1>
-<pre id="description2">
-Bruhcrypto Finance is a decentralized cryptocurrency exchange
-and NFT marketplace where users can trade both NFTs and
-cryptocurrencies while helping people in poverty.</pre>
-
-<pre>
-
-</pre>
-
-<h1 id="title2">Decentralized Exchange</h1>
+</section><section id="s4">
+<u>Exchange</u>
+<h1 id="title20">Decentralized Exchange</h1>
 <pre id="description2">
 Our DEX is a copied version of Uniswap, a primary decentralized
 crypto exchange. Combining their aspects with ours makes the
 exchange both user friendly and fast.
 </pre>
-
-<pre>
-
-</pre>
-
-<h1 id="title2">NFT Marketplace</h1>
+</section><section id="s5">
+<u>Marketplace</u>
+<h1 id="title20">NFT Marketplace</h1>
 <pre id="description2">
 Our NFT marketplace focuses on helping children in poverty
 by letting them curate NFTs at their own pace with low fees
 and sell them for money that they can spend on everyday goods.
 </pre>
-
-<pre>
-
-
-
-
-
-
-</pre>
-
+</section><section id="s6">
 <center><h1 id="title4">FAQ</center></h1>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Yes, we are safe. All of our actions to the
@@ -399,49 +517,49 @@ update to come through.
 (More info about the NFT Marketplace coming soon)
 </pre>
 </center></div>
-<center><div>
-<button type="button" class="collapsible" style="text-align: center;">How will The Children Benefit from Bruhcrypto Finance?</button>
+<center>
+<button type="button" class="collapsible" style="text-align: center;">How will Children Benefit from Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">When their NFT gets sold, the amount of
 cryptocurrency that the buyer bought the NFT for goes
 to the child's crypto wallet for them to freely hold
-or liquidate.<pre>
+or liquidate.</pre>
 </center></div>
-<center><div>
-<button type="button" class="collapsible" style="text-align: center;">How will the Children Get Access to Bruhcrypto Finance?</button>
+<center>
+<button type="button" class="collapsible" style="text-align: center;">How will Children Get Access to Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If the children do not have access to a device,
 then we are proposing giving them a device and teaching
 them how to use it and Bruhcrypto Finance. If the parents
 or gaurdians notify us about the child improperly using
 the device, we will set screen time limits and stop when
-the parents tell us to do so.<pre>
+the parents tell us to do so.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">What Sets Bruhcrypto Finance Apart From Competitors?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If you take a look at some examples of decentralized
 exchanges such as ShibaSwap, KishuSwap, and Dojoswap,
 they all lack a few aspects such as an NFT marketplace
 and a charitable mission. Well, we will have both of
-them.<pre>
+them.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">How will We Get People to Buy The NFTs?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">For us to get people to buy the NFTs, we need to spread
 marketing to other platforms and (hopefully) publish press
 releases about our mission to get more and more people
 interested in using Bruhcrypto Finance's DEX and NFT
-Marketplace.<pre>
+Marketplace.</pre>
 </center></div>
-<center><div>
+<center>
 <button type="button" class="collapsible" style="text-align: center;">How are We Going to Use Swap Commissions?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Since we charge a commission on swaps, we
 plan on using 70% of it to generate revenue, 25% of it
 to donate to charitable organizations, and 5% of it to
-be used as emergency funds. <pre>
+be used as emergency funds. </pre>
 </center></div>
 
 <style>
@@ -458,16 +576,16 @@ be used as emergency funds. <pre>
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
 color: #444;
 cursor: pointer;
-padding: 18px;
+padding: 1.2vw;
 width: 100%;
 border: none;
 text-align: left;
 outline: none;
-font-size: 15px;
-border-radius: 15px;
-font-family: 'DM Sans', sans-serif;
+font-size: 1vw;
+border-radius: 0.9vw;
+font-family: "DM Sans", sans-serif;
 color: white;
-width: 500px;
+width: 35vw;
 font-weight: 400;
 }
 
@@ -492,16 +610,17 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", en
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
-border-radius: 15px;
+border-radius: 1vw;
 color: white;
-width: 465px;
-height: 200px;
+width: 32vw;
+height: 20vw;
 font-weight: 500;
+font-family: Satoshi;
 }
 
 .collapsible:after {
 content: '\02795';
-font-size: 13px;
+font-size: 0.85vw;
 color: white;
 float: right;
 margin-left: 5px;
@@ -528,13 +647,12 @@ if (content.style.maxHeight){
 });
 }
 </script>
-</div>
-
-<center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center>
+<div id="first"><center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center></div>
 <center><p>Made with ♥ in Silicon Valley</p></center>
-<center><p>Contact us at bruhofficial@bruhcrypto.org or @bruhcryptofi/@bruhtokeno on Twitter</p></center>
-<center><p>v1.1.27</p></center>
-<center><p>Theme: Peach Sorbet</p></center>
+<center><p>Contact us at bruhofficial@bruhcrypto.finance or @bruhcryptofi on Twitter</p></center>
+<center><p id="version">v1.2.0</p></center>
 </body>
-
 </html>
+
+
+</section>
