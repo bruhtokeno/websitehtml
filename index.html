@@ -23,13 +23,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 @font-face {
 font-family: Vectrex;
@@ -51,15 +53,7 @@ src: url(Satoshi-Medium.otf);
 <style>
 
 body {
-  background: hsla(236, 99%, 72%, 1);
-
-  background: linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
-
-  background: -moz-linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
-
-  background: -webkit-linear-gradient(135deg, hsla(236, 99%, 72%, 1) 0%, hsla(1, 100%, 89%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#737DFE", endColorstr="#FFCAC9", GradientType=1 );
+  background: #737dfe;
   }
 
 
@@ -81,7 +75,7 @@ p{
   font-family: Satoshi;
   font-weight: 500;
   color: white;
-  margin: -10px;
+  margin: -.7vw;
 }
 
 a{
@@ -93,12 +87,16 @@ a{
 }
 
 h2{
-  font-size: 7vw;
-  font-family: 'Syne', sans-serif;
+  font-size: 5.5vw;
+  font-family: Sk-Modernist;
   font-weight: 700;
   color: white;
   margin: -1vw;
   margin-left: 2vw
+}
+
+h2{
+  font-weight: 500;
 }
 
 pre{
@@ -106,6 +104,16 @@ pre{
   font-family: Satoshi;
   color: white;
   font-weight: 500;
+}
+
+#comingsoon{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin: -.7vw;
+  margin-bottom: 15vw;
+  margin-top: 1vw;
 }
 
 #desc{
@@ -133,8 +141,8 @@ pre{
   margin:0 auto
 }
 #description2{
-    padding-left: 4vw;
-    margin-bottom: 5vw;
+    margin-bottom: 20vw;
+    margin-left: 5vw;
 }
 
 #description4{
@@ -144,6 +152,15 @@ pre{
   color: white;
   font-size: 2.3vw;
   margin-bottom: 8vw;
+  margin-left: 4vw;
+}
+
+#version{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin-bottom: -10vw;
 }
 
 a:hover {
@@ -154,19 +171,39 @@ a:hover {
   color: black;
 }
 
-#title2{
-  font-size: 3vw;
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
+u{
+  font-size: 1.3vw;
+  font-family: Sk-Modernist;
+  font-weight: 400;
   color: white;
-  padding-left: 4vw;
+  margin-top: 6vw;
 }
 
-#title4{
-  font-size: 3vw;
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
+u{
+  margin-left: 5vw;
+  text-decoration: none;
+  border-bottom: .2vw solid white;
+}
+
+#title20{
+  font-size: 4.5vw;
+  font-family: Sk-Modernist;
+  font-weight: 400;
   color: white;
+  margin-top: 10vw;
+}
+
+#title20{
+  margin-left: 5vw;
+}
+
+
+#title4{
+  font-size: 4vw;
+  font-family: Sk-Modernist;
+  font-weight: 500;
+  color: white;
+  margin-left: -2vw;
 }
 
 #collapsable{
@@ -198,33 +235,28 @@ z-index:1;
 margin: -10px;
 }
 
+span{
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5vw;
+  color: white;
+}
+
 #launchApp{
-  font-family: 'DM Sans', sans-serif;
-  font-size: 2vw;
-  background: hsla(31, 90%, 76%, 1);
-
-  background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  background: -moz-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  background: -webkit-linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f9c58d", endColorstr="#f492f0", GradientType=1 );
-  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5vw;
+  background: black;
+  border-radius: 1.3vw;
   padding: 1.5vw;
   border: white;
   font-weight: 500;
   color: white;
-  margin-bottom: 15vw;
   margin-top: 12px;
-
+  margin-left: -1vw;
 }
 
 #launchApp:hover {
-  background: rgb(115,125,254);
-  background: linear-gradient(135deg, rgba(115,125,254,1) 0%, rgba(255,202,201,1) 100%);
-  transition-delay: 1s;
-  -webkit-transition-delay: 1s;
+  background: white;
+  color: black;
 }
 
 #divider{
@@ -242,7 +274,7 @@ margin: -10px;
 #numbers {
   font-size: 2vw;
   margin: -10px;
-  font-family: Satoshi;
+  font-family: "Satoshi";
   margin-bottom: 10vw;
 }
 
@@ -281,21 +313,110 @@ img{
   margin-top: -3vw;
 }
 
+#s1{
+  background: hsla(39, 91%, 78%, 1);
+
+  background: linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(39, 91%, 78%, 1) 0%, hsla(355, 71%, 78%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FAD693", endColorstr="#EFA1A8", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s2{
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(41, 92%, 77%, 1) 42%, hsla(24, 92%, 77%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FAD88E", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s3{
+  background: hsla(22, 100%, 92%, 1);
+
+  background: linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(22, 100%, 92%, 1) 0%, hsla(32, 100%, 92%, 1) 18%, hsla(196, 100%, 69%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE4D4", endColorstr="#FFECD7", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s4{
+  background: hsla(0, 51%, 76%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(0, 51%, 76%, 1) 0%, hsla(201, 63%, 50%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E1A2A2", endColorstr="#2F98D0", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s5{
+  background: hsla(57, 91%, 66%, 1);
+
+  background: linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(57, 91%, 66%, 1) 0%, hsla(204, 89%, 54%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7EF5C", endColorstr="#229FF2", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
+#s6{
+  background: hsla(277, 40%, 56%, 1);
+
+  background: linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(277, 40%, 56%, 1) 0%, hsla(204, 80%, 60%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9A62BC", endColorstr="#48AAEB", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+  position: inherit;
+  margin-bottom: -10vw;
+}
+
 </style>
 
 <body>
+<section>
 <script type="text/javascript">
 if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 </script>
 
+
 <a href="https://bruhcrypto.finance"id="Top1">Bc/F.</a>
 
 <p id="divider"></p>
 
-<h2>Bruhcrypto</h2>
-<h2>Finance</h2>
+<h2>Creating a better</h2>
+<h2>future with</h2>
+<h2>web3 & DeFi.</h2>
 
 <style>
 
@@ -331,13 +452,12 @@ document.location = "mobile.html";
   camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
 
 <pre>
-Buy and sell your favorite tokens 
-and NFTs while helping children in
-poverty
+Trade your favorite tokens and NFTs
+while helping children in poverty
 <pre>
+<button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App 🡪 🚧</button>
 <p id="divider"></p>
-<center><button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App (Coming Soon)</center></button>
-
+<section id="s1">
 <center><pre id=description4>
   We're not a run-of-the-mill MemeFi project. We're creating a better
     future with web3, NFTs, commissions, and DeFi.
@@ -349,8 +469,16 @@ poverty
         of DeFi by 2023                        From 2020
 
       $800 Billion                                  6x</pre></center>
-
-<h1 id="title2">Why We Should Help</h1>
+</section><section id="s3">
+<u>Mission</u>
+<h1 id="title20">Our Mission</h1>
+<pre id="description2">
+Bruhcrypto Finance is a decentralized cryptocurrency exchange
+and NFT marketplace where users can trade both NFTs and
+cryptocurrencies while helping people in poverty.</pre>
+</section><section id="s2">
+<u>Mission</u>
+<h1 id="title20">Why We Should Help</h1>
 <pre id="description2">
 Now, more than ever, education and a stable life are needed
 for children who want to pioneer the future. Some children
@@ -358,27 +486,23 @@ are not able to access the resources that they need to achieve
 their dreams. That's where we step in and help the children with
 NFTs.
 </pre>
-
-<h1 id="title2">Our Mission</h1>
-<pre id="description2">
-Bruhcrypto Finance is a decentralized cryptocurrency exchange
-and NFT marketplace where users can trade both NFTs and
-cryptocurrencies while helping people in poverty.</pre>
-
-<h1 id="title2">Decentralized Exchange</h1>
+</section><section id="s4">
+<u>Exchange</u>
+<h1 id="title20">Decentralized Exchange</h1>
 <pre id="description2">
 Our DEX is a copied version of Uniswap, a primary decentralized
 crypto exchange. Combining their aspects with ours makes the
 exchange both user friendly and fast.
 </pre>
-
-<h1 id="title2">NFT Marketplace</h1>
+</section><section id="s5">
+<u>Marketplace</u>
+<h1 id="title20">NFT Marketplace</h1>
 <pre id="description2">
 Our NFT marketplace focuses on helping children in poverty
 by letting them curate NFTs at their own pace with low fees
 and sell them for money that they can spend on everyday goods.
 </pre>
-
+</section><section id="s6">
 <center><h1 id="title4">FAQ</center></h1>
 <center>
 <button type="button" class="collapsible" style="text-align: center;">Is Bruhcrypto Finance Safe?</button>
@@ -522,8 +646,9 @@ if (content.style.maxHeight){
 <div id="first"><center><a href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center></div>
 <center><p>Made with ♥ in Silicon Valley</p></center>
 <center><p>Contact us at bruhofficial@bruhcrypto.finance or @bruhcryptofi on Twitter</p></center>
-<center><p>v1.1.71</p></center>
-<center><p id="last">Theme: Lavender Field</p></center>
+<center><p id="version">v1.2.0</p></center>
 </body>
-
 </html>
+
+
+</section>
