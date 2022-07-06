@@ -140,7 +140,7 @@ pre{
   margin:0 auto
 }
 #description2{
-    margin-bottom: 20vw;
+    margin-bottom: 20%;
     margin-left: 5vw;
 }
 
@@ -174,7 +174,7 @@ u{
   font-family: Sk-Modernist;
   font-weight: 400;
   color: white;
-  margin-top: 6vw;
+  margin-top: 20%;
 }
 
 u{
@@ -188,7 +188,7 @@ u{
   font-family: Sk-Modernist;
   font-weight: 400;
   color: white;
-  margin-top: 10vw;
+  margin-top: 10%;
 }
 
 #title20{
@@ -454,7 +454,7 @@ document.location = "mobile.html";
    width: 50vw;
    position: absolute;
    top: calc(22vw - 22vw);
-   right: 3vw;
+   right: -1vw;
    }
 
    #model model-viewer {
@@ -474,17 +474,48 @@ document.location = "mobile.html";
   </script>
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script>
   <div id="model"> <model-viewer
-  src="proton.glb"
+  src="proto.glb"
   auto-rotate
   alt="A 3D model of our interface"
   environment-image="gradient].jpg"
+  camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
+
+  <style>
+
+     #two {
+     height: 43vw;
+     width: 43vw;
+     position: absolute;
+     top: calc(184vw - 22vw);
+     right: -1vw;
+     margin-bottom: -10vw;
+     border-radius: 2vw;
+     }
+
+     #two model-viewer {
+       height: 43vw;
+       width: 43vw;
+       position: absolute;
+       top: 0;
+       left: 0;
+       border: none;
+       border-radius: 2vw;
+     }
+
+  </style>
+
+  <div id="two"> <model-viewer
+  src="proto1.glb"
+  auto-rotate
+  alt="A 3D Representation of Our Mission"
+  environment-image="gradient1.6.jpg"
   camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
 
 <pre>
 Creating a better future with
 web3 & NFTs
 <pre>
-<button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App ➔ 🚧</button>
+<button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/app';">Launch App 🡪 🚧</button>
 <p id="divider"></p>
 <p id="divider"></p>
 <section id="s1">
@@ -503,9 +534,10 @@ web3 & NFTs
 <u>Mission</u>
 <h1 id="title20">Our Mission</h1>
 <pre id="description2">
-Bruhcrypto Finance is a decentralized cryptocurrency exchange
-and NFT marketplace where users can trade both NFTs and
-cryptocurrencies while helping people in poverty.</pre>
+Bruhcrypto Finance is a decentralized cryptocurrency
+exchange and NFT marketplace where users can trade
+both NFTs and cryptocurrencies while helping people
+in poverty.</pre>
 </section><section id="s2">
 <u>Mission</u>
 <h1 id="title20">Why We Should Help</h1>
@@ -675,7 +707,7 @@ if (content.style.maxHeight){
 </script>
 <div id="first"><center><a id="links" href="https://github.com/bruhtokeno/">Github 🐈</a> <a href="https://twitter.com/bruhcryptofi/">Twitter 🐦</a> <a href="https://discord.gg/USR3A3KC8E">Discord 🎮</a></center></div>
 <center><p>Made with ♥ in Silicon Valley</p></center>
-<center><p>Contact us at bruhofficial@bruhcrypto.finance or @bruhcryptofi on Twitter</p></center>
+<center><p>Contact us at bruhofficial@bruhcrypto.finance</p></center>
 <center><p id="version">v1.2.0</p></center>
 </body>
 </html>
