@@ -85,8 +85,20 @@ a{
   color: white;
 }
 
+#nft{
+  font-size: 1vw;
+  font-family: Satoshi;
+  font-weight: 500;
+  color: white;
+  margin-left: 4vw;
+}
+
+#div3{
+  margin-bottom: 2vw;
+}
+
 h2{
-  font-size: 4.7vw;
+  font-size: 5vw;
   font-family: Sk-Modernist;
   font-weight: 700;
   color: white;
@@ -99,7 +111,7 @@ h2{
 }
 
 pre{
-  font-size: 1.8vw;
+  font-size: 1.75vw;
   font-family: Satoshi;
   color: white;
   font-weight: 500;
@@ -301,6 +313,20 @@ span{
   margin-bottom: 10vw;
 }
 
+#nnumbers {
+  font-size: 2vw;
+  margin-right: 3vw;
+  font-family: "Satoshi";
+  margin-bottom: -1.5vw;
+}
+
+#nnumberss {
+  font-size: 3vw;
+  margin-right: 3vw;
+  font-family: "Satoshi";
+  margin-bottom: -2vw;
+}
+
 #buttonstop{
   display:inline; white-space:nowrap
 }
@@ -403,6 +429,20 @@ img{
   margin-right: -1vw;
 }
 
+#s45{
+  background: hsla(236, 56%, 50%, 1);
+
+  background: linear-gradient(135deg, hsla(236, 56%, 50%, 1) 0%, hsla(190, 59%, 68%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(236, 56%, 50%, 1) 0%, hsla(190, 59%, 68%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(236, 56%, 50%, 1) 0%, hsla(190, 59%, 68%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A44C7", endColorstr="#7ECEDE", GradientType=1 );
+  margin-left: -5vw;
+  margin-right: -1vw;
+}
+
 #s5{
   background: hsla(57, 91%, 66%, 1);
 
@@ -433,6 +473,63 @@ img{
   margin-bottom: -10vw;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1vw;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.5vw;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 5vw;;
+  z-index: 1;
+  border-radius: 1.5vw;
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 1vw;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #737DFE}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#drop{
+  text-align: center;
+  margin-top: -3vw;
+}
+
 </style>
 
 <body>
@@ -442,7 +539,34 @@ if (screen.width <= 699) {
 document.location = "mobile.html";
 }
 </script>
-<a href="https://bruhcrypto.finance"id="Top1"><img id="logo" src="Logo4.png"></img>Bruhcrypto</a>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<a href="https://bruhcrypto.finance"id="Top1"><img id="logo" src="Logo4.png"></img>Bruhcrypto</a><div id="drop"><div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Pages</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://bruhcrypto.finance/whitepaper">Whitepaper</a>
+  </div>
+</div>
+</div>
 
 <p id="divider"></p>
 
@@ -514,10 +638,11 @@ document.location = "mobile.html";
   camera-orbit="-20deg 75deg 3m"> </model-viewer> </div>
 
 <pre>
-Trade your favorite tokens and NFTs
-while helping children in poverty.
+Trade your favorite tokens
+and NFTs while helping children
+in poverty.
 <pre>
-<button id="launchApp"onclick="window.location.href='https://bruhcrypto.finance/joinbeta';">Join the Beta 🡪</button>
+<button id="launchApp"onclick="window.location.href='https://www.getrevue.co/profile/bruhcryptofi?via=twitter-profile';">Join the Beta 🡪</button>
 <p id="divider"></p>
 <p id="divider"></p>
 <section id="s1">
@@ -527,11 +652,12 @@ while helping children in poverty.
 </pre></center>
 
 <center><img src="Vectary texture (1).png" class="image2" alt="Interface model in Figma"></center>
-  <center><pre id="numbers">
-             Projected Valuation          DeFi Valuation Growth
-        of DeFi by 2023                        From 2020
-
-      $800 Billion                                  6x</pre></center>
+  <center><pre id="nnumberss">
+  Up to 75%                          Up to 60%</pre></center>
+<center><pre id="nnumbers">
+    Lower Swap Gas Fees                           Lower Liquidity Gas Fees</pre></center>
+<center><pre id="numbers">
+Than Uniswap                                           Than Uniswap</pre></center>
 </section><section id="s3">
 <u>Mission</u>
 <h1 id="title20">Our Mission</h1>
@@ -560,6 +686,8 @@ crypto exchange. Combining their aspects with ours makes the
 exchange both user friendly and fast with less gas fees and
 failed transactions.
 </pre>
+<a id="nft" href="https://blog.chain.link/dex-decentralized-exchange/#:~:text=A%20decentralized%20exchange%20(DEX)%20is,transfer%20and%20custody%20of%20funds.">What is a Decentralized Exchange? ↗️</a>
+<p id="div3"></p>
 </section><section id="s5">
 <u>Marketplace</u>
 <h1 id="title20">NFT Marketplace</h1>
@@ -568,6 +696,8 @@ Our NFT marketplace focuses on helping children in poverty
 by letting them curate NFTs at their own pace with low fees
 and sell them for money that they can spend on everyday goods.
 </pre>
+<a id="nft" href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq">What are NFTs? ↗️</a>
+<p id="div3"></p>
 </section><section id="s6">
 <center><h1 id="title4">FAQ</center></h1>
 <center>
@@ -575,8 +705,10 @@ and sell them for money that they can spend on everyday goods.
 <div class="content" style="text-align: center;">
 <pre id="collapsable">Yes, we are safe. All of our actions to the
 exchange's code are delayed and require 2 days for an
-update to come through.
-(More info about the NFT Marketplace coming soon)
+update to come through as we share the same timelock
+as Uniswap.
+(More info about the NFT Marketplace's timelock
+coming soon)
 </pre>
 </center></div>
 <center>
@@ -585,14 +717,16 @@ update to come through.
 <pre id="collapsable">When their NFT gets sold, the amount of
 cryptocurrency that the buyer bought the NFT for goes
 to the child's crypto wallet for them to freely hold
-or liquidate.</pre>
+or liquidate as our code allows the crypto to
+seamlessly flow into their wallets without us taking
+any of it.</pre>
 </center></div>
 <center>
 <button type="button" class="collapsible" style="text-align: center;">How will Children Get Access to Bruhcrypto Finance?</button>
 <div class="content" style="text-align: center;">
 <pre id="collapsable">If the children do not have access to a device,
 then we are proposing giving them a device and teaching
-them how to use it and Bruhcrypto Finance. If the parents
+them how to use it and Bruhcrypto Finance. If their parents
 or gaurdians notify us about the child improperly using
 the device, we will set screen time limits and stop when
 the parents tell us to do so.</pre>
@@ -618,10 +752,10 @@ Marketplace.</pre>
 <center>
 <button type="button" class="collapsible" style="text-align: center;">How are We Going to Use Swap Commissions?</button>
 <div class="content" style="text-align: center;">
-<pre id="collapsable">Since we charge a 0.3% commission on swaps, we
-plan on using 70% of it to generate revenue, 25% of it
-to donate to charitable organizations, and 5% of it to
-be used as emergency funds. </pre>
+<pre id="collapsable">Since we charge a commission on liquidity
+gains, we plan on using 70% of it to generate revenue,
+25% of it to donate to charitable organizations, and 5%
+of it to be used as emergency funds. </pre>
 </center></div>
 
 <style>
